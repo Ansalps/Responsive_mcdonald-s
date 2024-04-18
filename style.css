@@ -1,0 +1,41 @@
+/* .social_links {
+
+display:  flex;
+justify-content: center;
+align-items: center;
+} */
+/* .social_links img {
+    width: 40px;
+    height: auto;
+} */
+
+@media screen and (max-width: 992px) {
+    .logo{
+        width: 48px;
+    }
+    .list_class{
+        display: none;
+    }
+}
+/* @media screen and (max-width: 1199px) {
+    .circle_logo{
+        display: flex;
+        justify-content: center;
+    }
+    .squar_logo{
+        display: flex;
+        justify-content: end;
+    }
+} */
+/* @media screen and (min-width: 993px) {
+    
+    .accordion_class{
+        display: none;
+    }
+} */
+@media(max-width: 576px) {
+   #list{
+    display: none;
+   }
+    
+}
