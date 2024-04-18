@@ -70,7 +70,7 @@
                 Download the app and get $4 off your first $4 or more* mobile order. Every $1 you spend earns 100 points, redeemable for free food—the math is mathing.
             </div>
             <div>
-                <button type="button" class="btn btn-warning">Get $4 Off in the App</button>
+                <button type="button" class="btn btn-warning" id="first_button">Get $4 Off in the App</button>
             </div>
         </div>
        </div>
@@ -342,5 +342,19 @@
        </footer>
        </div>
     </div>
+    <script>
+      let isClicked = false;
+      const first_button = document.getElementById("first_button");
+      addEventListener("click", (e) => {
+        if(!isClicked){
+          first_button.innerHTML="button clicked";
+          isClicked = true; 
+        }
+        else {
+          first_button.innerHTML="Get $4";
+          isClicked = false; 
+        }
+      });
+    </script>
 </body>
 </html>
